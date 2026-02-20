@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { API_URL } from "./config/api";  
 import MessageForm from "./MessageForm";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   const fetchMessages = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:8000/api/messages"
+        `${API_URL}/messages`
       );
       setMessages(response.data);
     } catch (error) {
@@ -26,7 +27,7 @@ function App() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/messages",
+        `${API_URL}/messages`,
         {
           title: payload.title,
           original_content: payload.content,
