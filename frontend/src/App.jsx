@@ -35,7 +35,8 @@ function App() {
         }
       );
 
-      // Agregamos el nuevo mensaje al inicio
+      setTimeout(() => fetchMessages(), 5000);
+
       setMessages(prev => [
         response.data.data,
         ...prev

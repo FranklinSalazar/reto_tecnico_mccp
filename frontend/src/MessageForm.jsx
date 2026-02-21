@@ -180,7 +180,7 @@ export default function MessageForm({ messages, onSend }) {
 
                     <form onSubmit={handleSubmit}>
                         <label style={styles.label}>Título</label>
-                        <input style={styles.input} value={title} onChange={e => setTitle(e.target.value)} placeholder="Ej: Informe financiero Q1"/>
+                        <input style={styles.input} value={title} onChange={e => setTitle(e.target.value)} placeholder="Ej: Ingrese su descripcion"/>
 
                         <label style={styles.label}>Contenido</label>
                         <textarea style={styles.textarea} value={content} onChange={e => setContent(e.target.value)} rows={5} placeholder="Escribe el contenido aquí..."/>
