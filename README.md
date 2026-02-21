@@ -255,5 +255,9 @@ Las imágenes se encuentran en:
 ```
 /docs/images
 ```
+## 🌐 Demo en Producción
 
+🔗 https://mccp.vercel.app
+
+> La aplicación se encuentra completamente funcional en entorno productivo.
 ---
